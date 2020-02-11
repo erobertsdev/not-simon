@@ -1,0 +1,274 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: center;
+	background-color: black;
+
+	animation: fadeIn 1s linear;
+}
+
+.main-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: 'Pacifico', cursive;
+	font-size: 6em;
+}
+
+#status {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 3em;
+}
+
+.game {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 300px 300px 300px 300px 300px;
+	grid-gap: 20px;
+}
+
+.btn {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 250px;
+	height: 250px;
+	border: 1px solid white;
+	border-radius: 15%;
+	box-sizing: border-box;
+	justify-self: center;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+#btn-start {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+	color: white;
+	background-color: black;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 10px;
+	transition: all .3s;
+}
+#btn-start:hover {
+	border: 1px solid orange;
+	color: orange;
+	cursor: pointer;
+}
+
+#btnred {
+	background: radial-gradient(#e20000, #5d0000);
+}
+#btnred:hover {
+	filter: brightness(130%);
+	border: 3px solid orange;
+}
+#btnred:active {
+	filter: brightness(70%);
+}
+
+#btnblue {
+	background: radial-gradient(#0400d6, #010055);
+}
+#btnblue:hover {
+	filter: brightness(130%);
+	border: 3px solid orange;
+}
+#btnblue:active {
+	filter: brightness(70%);
+}
+
+#btngreen {
+	background: radial-gradient(#00d836, #005515);
+}
+#btngreen:hover {
+	filter: brightness(130%);
+	border: 3px solid orange;
+}
+#btngreen:active {
+	filter: brightness(70%);
+}
+
+#btnyellow {
+	background: radial-gradient(#ddc700, #534b00);
+}
+#btnyellow:hover {
+	filter: brightness(130%);
+	border: 3px solid orange;
+}
+#btnyellow:active {
+	filter: brightness(70%);
+}
+
+#btnpurple {
+	background: radial-gradient(#ae00da, #430053);
+}
+#btnpurple:hover {
+	filter: brightness(130%);
+	border: 3px solid orange;
+}
+#btnpurple:active {
+	filter: brightness(70%);
+}
+
+#final-popup {
+	font-size: 3rem;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(47, 47, 47, 0.733);
+	z-index: 5;
+	display: none;
+	animation: fadeIn .5s linear;
+}
+
+.final {
+	font-size: 2em;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -120px;
+	margin-left: -380px;
+	padding-bottom: 10px;
+}
+
+#reload {
+	position: fixed;
+	top: 60%;
+	left: 60%;
+	margin-top: -100px;
+	margin-left: -340px;
+	font-size: 2rem;
+	color: white;
+	background-color: orange;
+	padding: 20px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	transition: all .3s;
+}
+#reload:hover {
+	cursor: pointer;
+	color: black;
+	filter: brightness(130%);
+}
+
+.light {
+	filter: brightness(150%);
+	border: 3px solid orange;
+}
+
+i {
+	color: white;
+	font-size: 3em;
+	margin-top: 20px;
+	transition: color .3s;
+}
+i:hover {
+	color: orange;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media all and (max-width: 1650px) {
+	.game {
+		grid-template-columns: 250px 250px 250px 250px 250px;
+	}
+	.btn {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+@media all and (max-width: 1350px) {
+	.game {
+		grid-template-columns: 250px 250px;
+		grid-gap: 0;
+	}
+	.btn {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+@media all and (max-width: 900px) {
+	.main-title {
+		font-size: 3em;
+	}
+	.game {
+		grid-template-columns: 150px 150px;
+		grid-gap: 0;
+	}
+	.final {
+		font-size: 1em;
+		top: 40%;
+		left: 13%;
+		margin-left: 0;
+	}
+	#status {
+		font-size: 1.5em;
+	}
+	#reload {
+		top: 50%;
+		left: 25%;
+		margin-left: 0;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-device-height: 640px) {
+	.main-title {
+		font-size: 3em;
+	}
+	.game {
+		grid-template-columns: 150px 150px 150px 150px 150px;
+		grid-gap: 0;
+	}
+	.btn {
+		height: 100px;
+		width: 100px;
+	}
+	.final {
+		top: 60%;
+		left: 30%;
+	}
+	#status {
+		font-size: 1.5em;
+	}
+	#reload {
+		top: 70%;
+		left: 38%;
+		margin-left: 0;
+	}
+}
+
+@media (pointer: coarse) {
+	#btnred:hover,
+	#btngreen:hover,
+	#btnblue:hover,
+	#btnyellow:hover,
+	#btnpurple:hover {
+		filter: brightness(100%);
+		border: 1px solid white;
+	}
+	#btnred:active,
+	#btngreen:active,
+	#btnblue:active,
+	#btnyellow:active,
+	#btnpurple:active {
+		filter: brightness(130%);
+		border: 3px solid orange;
+	}
+}

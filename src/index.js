@@ -98,8 +98,8 @@ game.startButton.addEventListener('click', () => {
 
 for (let btn of boardArr) {
 	btn.addEventListener('click', () => {
-		game.playerArr.push(btn.id);
 		if (!game.gameOver) {
+			game.playerArr.push(btn.id);
 			eval(btn.id).currentTime = 0;
 			eval(btn.id).play();
 			if (game.simonArr[game.playerCount] != game.playerArr[game.playerCount]) {

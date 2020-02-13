@@ -3,7 +3,7 @@ let boardArr = [ game.redButton, game.blueButton, game.greenButton, game.yellowB
 let btnred, btnblue, btngreen, btnyellow, btnpurple;
 
 const generateRandom = () => {
-	let choice = Math.floor(Math.random() * 4 + 1);
+	let choice = Math.floor(Math.random() * Math.floor(4));
 	let gameChoice = boardArr[choice];
 	game.gameDomArr.push(gameChoice);
 	game.simonArr.push(gameChoice.id);

@@ -44,13 +44,13 @@ const compare = () => {
 			game.round++;
 			game.status.textContent = `Round: ${game.round}`;
 			if (game.round <= 4) {
-				game.speed = 1000;
+				game.speed = 800;
 			} else if (game.round >= 5 && game.round < 9) {
-				game.speed = 700;
-			} else if (game.round >= 9 && game.round < 13) {
 				game.speed = 500;
-			} else {
+			} else if (game.round >= 9 && game.round < 13) {
 				game.speed = 300;
+			} else {
+				game.speed = 100;
 			}
 			setTimeout(() => {
 				game.runState = setInterval(gamePlay, game.speed);

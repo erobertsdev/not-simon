@@ -116,39 +116,25 @@ body {
 
 #final-popup {
 	font-size: 3rem;
-	position: fixed;
-	height: 100%;
-	width: 100%;
+	margin: auto;
+	position: absolute;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
+	bottom: 0;
+	right: 0;
 	background-color: rgba(47, 47, 47, 0.733);
 	z-index: 5;
+	text-align: center;
 	display: none;
 	animation: fadeIn .5s linear;
 }
 
 .final {
+	margin-top: 30vh;
 	font-size: 1.8em;
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-	padding-bottom: 10px;
 }
 
 #reload {
-	position: absolute;
-	top: 65%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
 	font-size: 1.8rem;
 	color: white;
 	background-color: orange;

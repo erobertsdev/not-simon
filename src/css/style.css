@@ -245,15 +245,13 @@ i:hover {
 	#btnblue:hover,
 	#btnyellow:hover,
 	#btnpurple:hover {
-		filter: brightness(100%);
-		border: 1px solid white;
+		pointer-events: none;
 	}
 	#btnred:active,
 	#btngreen:active,
 	#btnblue:active,
 	#btnyellow:active,
 	#btnpurple:active {
-		filter: brightness(130%);
-		border: 3px solid orange;
+		pointer-events: none;
 	}
 }
